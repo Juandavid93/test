@@ -1,43 +1,57 @@
+
 <html>
 
-<head>
+  <head>
 
-
-</head>
-
-<body>
-<form name="form1" action="#" method ="post">
-    Formulario de Registro:<br>
-   <br> Nombre : <input type="text" name="user:"
-     title="Este campo solo acepta letras" required>
-     <br> Apellidos : <input type="text" name="Nombres:"
-     title="Este campo solo acepta letras" required>
-     <br> No identificacion : <input type="text" name="Nombres:"
-     title="Este campo solo acepta letras" required>
-     <br> Genero : <input type="text" name="Nombres:"
-     title="Este campo solo acepta letras" required>
-     <br> Telefono : <input type="text" name="Nombres:"
-     title="Este campo solo acepta letras" required>
-     <br> Celular : <input type="text" name="Nombres:"
-     title="Este campo solo acepta letras" required>
-     <br> Departamento Nac : <input type="text" name="Nombres:"
-     title="Este campo solo acepta letras" required>
-     <br> Ciudad Nac : <input type="text" name="Nombres:"
-     title="Este campo solo acepta letras" required>
-     <br> Correo electronico : <input type="text" name="Nombres:"
-     title="Este campo solo acepta letras" required>
-     <br> Contraseña : <input type="password" name="Nombres:"
-     title="Este campo solo acepta letras" required>
-     <br> Confirmar Contraseña : <input type="password" name="passwd:"
-     title="Este campo solo acepta letras" required>
-     <br> Foto : <input type="text" name="Nombres:"
-     title="Este campo solo acepta letras" required>
-     <br> Tipo identificacion : <input type="text" name="Nombres:"
-     title="Este campo solo acepta letras" required>
-     <br> <input type = "submit" value = "Iniciar sesion">
-
-</form>
-
-</body>
-
-</html>
+    
+  
+  
+  </head>
+  
+  <body>
+  <form name="form1" action="#" method ="post">
+      <table align="center" border ="1">
+          <tr> <td colspan = "2"> Formulario de Registro</td></tr>
+          <tr> <td> Nombre * :</td><td> <input type="text" name="nuser:" pattern="[0-9]{7,12}" title="Este campo solo acepta letras" required> </td></tr>
+          <tr> <td> Apellido * :</td><td> <input type="text" name="apuser:"  title="Este campo solo acepta mayusculas" required> </td></tr>
+          <tr> <td> Nro Identificacion :</td><td> <input type="text" name="iduser:"  onKeypress="if (event.keyCode < 45 || event.keyCode > 57) event.returnValue = false;"> </td></tr>
+          <tr> <td rowspan="1"> Genero :</td><td> Masculino <input type="radio" name="rad1:"> Femenino <input type="radio" name="rad1:"></tr>
+          <tr> <td> Telefono :</td><td> <input type="text" name="user:"  title="Este campo solo acepta letras" required> </td></tr>
+          <tr> <td> Celular :</td><td> <input type="text" name="user:"  title="Este campo solo acepta letras" required> </td></tr>
+          <tr> <td> Departamento Nacimiento :</td><td> <select name ="depart"> 
+            <option value=""disabled selected> --- seleccione una opcion</option>
+            <option value="Nariño">Nariño</option>
+            <option value="Nariño">CAUCA</option>
+            <option value="Nariño">VALLE DEL CAUCA</option>
+            <option value="Nariño">BARRANQUILLA</option>
+            <option value="Nariño">ARAUCA</option>
+            <option value="Nariño">CUCUTA</option>
+            <option value="Nariño">BOLIVAR</option>
+            <option value="Nariño">ANTIOQUIA</option>
+            <option value="Nariño">BOYACA</option>
+            </select> </td></tr>
+            <tr> <td> Ciudad Nacimiento :</td><td> <select name ="ciud"> 
+              <option value=""disabled selected> --- seleccione una opcion</option>
+              <option value="Nariño">PASTO</option>
+              <option value="Nariño">ARAUCA</option>
+              <option value="Nariño">CALI</option>
+              <option value="Nariño">RIOACHA</option>
+              <option value="Nariño">PEREIRA</option>
+              <option value="Nariño">SINCELEJO</option>
+              <option value="Nariño">BUCARAMANGA</option>
+              <option value="Nariño">IBAGUE</option>
+              <option value="Nariño">MITU</option>
+              </select> </td></tr>
+          <tr> <td> Correo Electronico :</td><td> <input type="email" name="Corre:"></td></tr>
+          <tr> <td> Constraseña :</td><td> <input type="password" name="clave:"> </td></tr>
+          <tr> <td> Confirmar contraseña :</td><td> <input type="password" name="user:"> </td></tr>
+          <tr> <td> Foto :</td><td> <input type="file" name="imag:" > </td></tr>
+          <tr> <td> Tipo de Identificacion :</td><td> <input type="text" name="user:"  title="Este campo solo acepta letras" required> </td></tr>
+    
+       <br> <input type = "submit" value = "Iniciar sesion">
+  
+  </form>
+  
+  </body>
+  
+  </html>
